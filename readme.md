@@ -16,7 +16,7 @@ The installation is very hard and not every Jedi can handle it.
 First, let's copy the repository:
 
 ```bash
-git clone https://github.com/aethletic/readit.git as readit
+git clone https://github.com/aethletic/readit.git
 ```
 
 Let's go to the folder we just downloaded:
