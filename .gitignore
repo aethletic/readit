@@ -1,4 +1,6 @@
 .vscode
 vendor
-storage
-!.gitkeep
+storage/cache/twig/*
+!storage/cache/twig/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
