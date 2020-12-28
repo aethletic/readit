@@ -113,7 +113,6 @@ return [
 * **`theme.default`** - default theme for if site open first time. 
 * **`theme.dark`** - dark theme. 
 * **`theme.light`** - light theme. 
-* **`theme.light`** - light theme. 
 
 ##### Navbar
 * **`type`** - type of element.
