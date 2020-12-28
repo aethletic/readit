@@ -172,3 +172,14 @@ This an example of `atom-one-dark.json` theme:
     }
 }
 ```
+
+### TODO
+
+* Add versioning documentation
+* Code refactor
+* Fix known bugs
+
+---
+
+#### Crafted for yourself ❤️
+
