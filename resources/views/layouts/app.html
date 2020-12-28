@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/{{ theme.code_highlight_theme }}.min.css"/>
+      <style>
+         :root {
+         --theme-primary: {{ theme.elements.primary }};
+         --theme-secondary: {{ theme.elements.secondary }};
+         --theme-text: {{ theme.elements.text }};
+         --theme-menu-item: {{ theme.elements.menu_item }};
+         --theme-link: {{ theme.elements.link }};
+         --theme-quote: {{ theme.elements.quote }};
+         --theme-menu-btn-text: {{ theme.elements.menu_btn_text }};
+         --theme-menu-btn-bg: {{ theme.elements.menu_btn_bg }};
+         --theme-heading: {{ theme.elements.heading }};
+         --theme-heading-hover: {{ theme.elements.heading_hover }};
+         --theme-background: {{ theme.elements.background }};
+         --theme-clipboard: {{ theme.elements.clipboard }};
+         --theme-border: {{ theme.elements.border }};
+         --theme-navbar: {{ theme.elements.navbar }};
+         --theme-black: {{ theme.colors.black }};
+         --theme-deep-black: {{ theme.colors.deep_black }};
+         --theme-white: {{ theme.colors.white }};
+         --theme-deep-white: {{ theme.colors.deep_white }};
+         --theme-gray: {{ theme.colors.gray }};
+         --theme-deep-gray: {{ theme.colors.deep_gray }};
+         --theme-dark-gray: {{ theme.colors.drak-gray }};
+         --theme-deep-dark-gray: {{ theme.colors.deep_dark_gray }};
+         --theme-red: {{ theme.colors.red }};
+         --theme-deep-red: {{ theme.colors.deep_red }};
+         --theme-yellow: {{ theme.colors.yellow }};
+         --theme-deep-yellow:{{ theme.colors.deep_yellow }};
+         --theme-green: {{ theme.colors.green }};
+         --theme-deep-green: {{ theme.colors.deep_green }};
+         --theme-cyan: {{ theme.colors.cyan }};
+         --theme-deep-cyan: {{ theme.colors.deep_cyan }};
+         --theme-blue: {{ theme.colors.blue }};
+         --theme-deep-blue: {{ theme.colors.deep_blue }};
+         --theme-purple: {{ theme.colors.purple }};
+         --theme-deep-purple: {{ theme.colors.deep_purple }};
+         }
+      </style>
+      <link rel="stylesheet" href="/assets/css/app.css?{{ date().timestamp }}">
+      <link rel="stylesheet" href="/assets/css/sidebar.css?{{ date().timestamp }}">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+      <title>{{ current.text }} - {{ APP_NAME }}</title>
+   </head>
+   <body>
+      <div class="d-flex" id="wrapper">
+         <div class="border-right sidebar-fixed-scroll" id="sidebar-wrapper">
+            <div class="sidebar-heading font-weight-bold border-bottom overflow-dot">{{ APP_NAME }}</div>
+            <div class="list-group list-group-flush">
+               {% for item in list %}
+               <a href="{{ item.link }}"
+                  class="list-group-item list-group-item-action bg-transparent overflow-dot theme-white {% if item.link == current.link %}current{% endif %}">{{ item.text }}</a>
+               {% endfor %}
+            </div>
+         </div>
+         <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg text-light border-bottom fixed-top">
+               <span class="navbar-text ml-auto row mr-1">
+               {% for item in navbar %}
+               {% if item.type == 'link' %}
+               <a href="{{ item.link }}"
+                  class="d-none d-sm-inline col font-weight-bold text-decoration-none theme-{{ item.color }}">{{ item.text|raw }}</a>
+               {% endif %}
+               {% endfor %}
+               {% if darkmode_enbaled %}
+               <span id="darkmode"
+                  class="d-none d-sm-inline cursor-pointer col font-weight-bold text-decoration-none theme-yellow theme-bg-secondary px-3 py-2 rounded"><i class="fas fa-{% if darkmode %}sun{%else%}moon{%endif%}"></i></span>
+               {% endif %}
+               <span id="menu-toggle"
+                  class="d-inline d-sm-none col font-weight-bold text-decoration-none theme-menu-btn-text theme-menu-btn-bg px-3 py-2 rounded"><i class="fas fa-bars"></i></span>
+               </span>
+            </nav>
+            <div id="content" class="container-sm p-3">
+               {% block content %} {% endblock %}
+               <div class="small float-right mb-3">{{ filemtime }}</div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/@highlightjs/cdn-assets@10.4.1/highlight.min.js"></script>
+      <script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+      <script src="/assets/js/app.js?{{ date().timestamp }}"></script>
+   </body>
+</html>

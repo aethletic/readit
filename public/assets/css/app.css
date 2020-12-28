@@ -1,0 +1,222 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: var(--theme-background) !important;
+    color: var(--theme-text) !important;
+}
+
+code {
+    font-family: "Consolas", monospace !important;
+    font-size: 14px !important;
+    border-radius: 3px !important;
+    color: none;
+    /* border for code element */
+    /* border: 1px solid !important; */
+    /* border-color: var(--theme-border) !important; */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+#content {
+    margin-top: 57px;
+}
+
+.overflow-dot {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar {
+    z-index: 1;
+    background: var(--theme-navbar) !important;
+    backdrop-filter: blur(10px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+}
+
+.anchor {
+    display: block;
+    height: 57px;
+    /* 57 navbar + p-3 (16px) */
+    margin-top: -57px;
+    visibility: hidden;
+}
+
+.current {
+    background-color: var(--theme-secondary) !important;
+    box-shadow: inset 5px 0px 0px 0px var(--theme-primary);
+    border-right-width: 1px !important;
+    border-color: var(--theme-border) !important;
+}
+
+.blockquote {
+    font-size: 1rem;
+    /* background-color: #282c34; */
+    color: var(--theme-quote);
+    padding-left: 10px;
+    box-shadow: inset .25em 0px 0px 0px var(--theme-primary);
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    /* border: 1px solid !important; */
+    /* border-color: rgba(0, 0, 0, .225) !important; */
+}
+
+.border-right,
+.border-bottom,
+.border-left,
+.border-top,
+.border {
+    border-color: var(--theme-border) !important;
+}
+
+.code-badge {
+    font-family: "Consolas", monospace;
+    /* margin-top: 5px;
+    margin-right: 5px; */
+    background-color: var(--theme-dark-gray) !important;
+    /* border-radius: 3px !important; */
+    border-radius: 0 !important;
+    border-right-width: 1px;
+    border-top-width: solid 1px;
+    opacity: 0.5 !important;
+    border-color: var(--theme-border) !important;
+    transition: opacity linear 0.1s !important;
+    color: var(--theme-clipboard) !important;
+}
+
+.code-badge:hover {
+    opacity: .95 !important;
+    /* background-color: var(--theme-deep-dark-gray) !important; */
+}
+
+.code-badge-language {
+    text-transform: uppercase;
+    cursor: default;
+    color: var(--theme-clipboard) !important;
+}
+
+.theme-purple {
+    color: var(--theme-purple);
+}
+
+.theme-purple:hover {
+    color: var(--theme-deep-purple);
+}
+
+.theme-blue {
+    color: var(--theme-blue);
+}
+
+.theme-blue:hover {
+    color: var(--theme-deep-blue);
+}
+
+.theme-dark-gray {
+    color: var(--theme-dark-gray);
+}
+
+.theme-dark-gray:hover {
+    color: var(--theme-deep-dark-gray);
+}
+
+.theme-black {
+    color: var(--theme-black);
+}
+
+.theme-black:hover {
+    color: var(--theme-deep-black);
+}
+
+.theme-yellow {
+    color: var(--theme-yellow);
+}
+
+.theme-yellow:hover {
+    color: var(--theme-deep-yellow);
+}
+
+.theme-white {
+    color: var(--theme-white);
+}
+
+.theme-white:hover {
+    color: var(--theme-deep-white);
+}
+
+.theme-red {
+    color: var(--theme-red);
+}
+
+.theme-red:hover {
+    color: var(var(--theme-deep-red));
+}
+
+.theme-green {
+    color: var(--theme-green);
+}
+
+.theme-green:hover {
+    color: var(--theme-deep-green);
+}
+
+.theme-gray {
+    color: var(--theme-gray);
+}
+
+.theme-gray:hover {
+    color: var(--theme-deep-gray);
+}
+
+.theme-cyan {
+    color: var(--theme-cyan);
+}
+
+.theme-cyan:hover {
+    color: var(--theme-deep-cyan);
+}
+
+.theme-link,
+.theme-link:hover,
+.theme-link:active,
+.theme-link:visited {
+    color: var(--theme-link) !important;
+}
+
+.theme-heading {
+    color: var(--theme-heading) !important;
+}
+
+.theme-heading:hover,
+.theme-heading:active,
+.theme-heading:visited {
+    color: var(--theme-heading-hover) !important;
+}
+
+.theme-bg-secondary {
+    background-color: var(--theme-secondary) !important;
+}
+
+.theme-bg-primary {
+    background-color: var(--theme-primary) !important;
+}
+
+.theme-secondary {
+    color: var(--theme-secondary) !important;
+}
+
+.theme-clipboard {
+    color: var(--theme-clipboard) !important;
+}
+
+.theme-menu-btn-text {
+    color: var(--theme-menu-btn-text) !important;
+}
+
+.theme-menu-btn-bg {
+    background-color: var(--theme-menu-btn-bg) !important;
+}

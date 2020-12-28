@@ -1,0 +1,43 @@
+{
+    "name": "atom-one-light",
+    "code_highlight_theme": "nord",
+    "see_available_code_themes_here": "https://highlightjs.org/static/demo/",
+    "elements": {
+        "primary": "#61afef",
+        "secondary": "#f3f3f3",
+        "text": "#32363f",
+        "menu_item": "#32363f",
+        "menu_btn_text": "#ABB2BF",
+        "menu_btn_bg": "#f3f3f3",
+        "link": "#61afef",
+        "qoute": "#898f99",
+        "clipboard": "#fff",
+        "heading": "#1E2127",
+        "heading_hover": "#1E2127",
+        "background": "#f8f8f8",
+        "border": "rgba(0, 0, 0, .04)",
+        "navbar": "rgb(248, 248, 248, 0.4)"
+    },
+    "colors": {
+        "black": "#1E2127",
+        "deep_black": "#1E2127",
+        "white": "#ABB2BF",
+        "deep_white": "#ABB2BF",
+        "gray": "#5C6370",
+        "deep_gray": "#5C6370",
+        "dark_gray": "#282c34",
+        "deep_dark_gray": "#282c34",
+        "red": "#E06C75",
+        "deep_red": "#E06C75",
+        "yellow": "#D19A66",
+        "deep_yellow": "#D19A66",
+        "green": "#98C379",
+        "deep_green": "#98C379",
+        "cyan": "#56B6C2",
+        "deep_cyan": "#56B6C2",
+        "blue": "#61afef",
+        "deep_blue": "#61afef",
+        "purple": "#c678dd",
+        "deep_purple": "#c678dd"
+    }
+}
