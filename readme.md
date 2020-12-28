@@ -43,7 +43,7 @@ And let's start the test server:
 php -S localhost:1337
 ```
 
-You can now open our test site [`localhost:1337`](http://localhost:1337) in a browser and see this page 🥳
+You can now open our test site [`localhost:1337`](http://localhost:1337) in a browser 🥳
 
 Uff, it was really hard!
 
