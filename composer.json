@@ -1,12 +1,12 @@
 {
-    "name": "aethletic/readit",
+    "name": "chipslays/readit",
     "description": "Simple documentation by automating building from Markdown.",
     "require": {
         "izniburak/router": "^2.2",
         "twig/twig": "^3.1",
         "erusev/parsedown": "^1.7",
         "bramus/router": "~1.5",
-        "aethletic/php-container": "^0.0.1"
+        "chipslays/php-container": "^0.0.1"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.2"
