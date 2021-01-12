@@ -16,7 +16,7 @@ The installation is very hard and not every Jedi can handle it.
 First, let's copy the repository:
 
 ```bash
-git clone https://github.com/aethletic/readit.git
+git clone https://github.com/chipslays/readit.git
 ```
 
 Let's go to the folder we just downloaded:
@@ -52,10 +52,10 @@ Uff, it was really hard!
 What? Nothing works..? Um... Then you better take the alternatives.
 
 ### Dark theme
-![Dark](https://github.com/aethletic/readit/blob/master/.github/readit-dark.png)
+![Dark](https://github.com/chipslays/readit/blob/master/.github/readit-dark.png)
 
 ### Light theme
-![Light](https://github.com/aethletic/readit/blob/master/.github/readit-light.png)
+![Light](https://github.com/chipslays/readit/blob/master/.github/readit-light.png)
 
 ### Quick start
 
